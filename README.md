@@ -19,6 +19,9 @@
 </a>
 </center>
 
+# Super módulo - DevOps, SRE e Engenheria de Plataforma
+
+
 ![DevOps for Life - DevOps, SRE e Engenheiro de Plataforma](img/super-modulo.png)
 
 # DevOps For Life
@@ -35,10 +38,6 @@ Acesse e aproveite o cupom de desconto para usuários do GitHub!
 
 20% de DESCONTO EM TODAS ASSINATURAS!
 
-
-
-
-# Super módulo - DevOps, SRE e Engenheria de Plataforma
 
 
 ## Capítulo 1: Introdução ao DevOps, SRE e Engenharia de Plataforma
