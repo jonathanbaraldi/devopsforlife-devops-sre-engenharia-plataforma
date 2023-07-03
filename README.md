@@ -65,7 +65,7 @@ Acesse e aproveite o cupom de desconto para usuários do GitHub!
 
 10. Conceitos e Melhores Práticas de CI/CD
     Descrição: Fundamentos da CI/CD, incluindo automação de testes e implantação.
-11. Configurando um Pipeline CI/CD com Jenkins
+11. Configurando um Pipeline CI/CD com Github Actions
     Descrição: Como criar e gerenciar pipelines de CI/CD usando Jenkins.
 12. GitLab CI/CD: Configuração e Fluxo de Trabalho
     Descrição: Configuração e uso do GitLab CI/CD para automação de CI/CD.

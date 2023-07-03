@@ -68,7 +68,6 @@ O papel das ramificações no Git.
 Diferentes estratégias de ramificação: Ramificação de recursos, Gitflow, Bifurcação.
 Entendendo os conflitos de mesclagem e como resolvê-los.
 Usando tags para marcar pontos específicos na história.
-Rebase e a diferença entre merge e rebase.
 Práticas recomendadas para um fluxo de trabalho eficiente: quando ramificar, quando mesclar, etc.
 
 Melhores práticas: Escrever boas mensagens de commit, manter um repositório limpo e organizado.
@@ -77,30 +76,34 @@ Melhores práticas: Escrever boas mensagens de commit, manter um repositório li
 
 Crie uma nova branch no seu repositório, faça alterações, faça commit delas e depois faça merge da branch de volta para a main.
 ```sh
-git checkout -b nova-branch
-echo "Alguma alteração" > arquivo.txt
-git commit -am "Altera arquivo.txt"
+git checkout -b nova-branch-2
+echo "Alguma alteração 2" > arquivo.txt
+git add arquivo.txt
+git commit -m "Altera arquivo.txt"
 git checkout main
-git merge nova-branch
+git merge nova-branch-2
 ```
 Simule um conflito de merge fazendo alterações conflitantes em duas branches e depois tente fazer merge delas. Pratique a resolução do conflito.
 ```sh
-git checkout -b branch1
-echo "Alteração na branch1" > arquivo.txt
-git commit -am "Altera arquivo na branch1"
+git checkout -b branch1-1
+echo "Alteração na branch1-1" > arquivo.txt
+git add arquivo.txt
+git commit -m "Altera arquivo na branch1-1"
 git checkout main
-git checkout -b branch2
-echo "Alteração na branch2" > arquivo.txt
-git commit -am "Altera arquivo na branch2"
+git checkout -b branch2-2
+echo "Alteração na branch2-1" > arquivo.txt
+git add arquivo.txt
+git commit -m "Altera arquivo na branch2-2"
 git checkout main
-git merge branch1
-git merge branch2
+git merge branch1-1
+git merge branch2-2
 # Resolver conflito no arquivo.txt, depois:
-git commit -am "Resolve conflito de merge"
+git add arquivo.txt
+git commit -m "Resolve conflito de merge"
 ```
 Use tags para marcar um commit específico como um lançamento de versão.
 ```sh
-git tag v1.0.0
+git tag v2.0.0
 git push --tags
 ```
 
@@ -123,10 +126,11 @@ Ferramentas para revisão de código no GitHub: comentários embutidos, revisõe
 Este exercício envolve mais interação com a interface do GitHub, mas o parceiro pode usar comandos semelhantes aos acima para fazer alterações no repositório forkado.
 - Faça uma alteração em uma branch e envie um pull request para o seu próprio repositório. Reveja as alterações, deixe comentários e faça merge do request.
 ```sh 
-git checkout -b nova-branch
-echo "Alguma alteração" > arquivo.txt
-git commit -am "Altera arquivo.txt"
-git push origin nova-branch
+git checkout -b nova-branch-3
+echo "Alguma alteração 3" > arquivo.txt
+git add arquivo.txt
+git commit -m "Altera arquivo.txt"
+git push origin nova-branch-3
 ```
 - Depois disso, vá para o GitHub e crie um novo pull request a partir da "nova-branch" para a "main".
 - Faça alterações em uma branch e intencionalmente crie um conflito de merge quando enviar um pull request. Pratique a resolução do conflito no GitHub.
